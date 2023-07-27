@@ -6,7 +6,6 @@
   --decorationRed: rgb(79, 15, 21);
   --decorationPurple: #391045;
 
-  --textPurple: #1f245c;
   --textWhite: #f3f4f6;
   --textGray: #adb9c7;
 }
@@ -35,7 +34,7 @@ header {
 
 /* NAVBAR */
 .header__logo {
-  max-height: 50px;
+  height: 50px;
 }
 
 .nav__list {
@@ -121,7 +120,7 @@ main {
 #about-us h2,
 #servicios h2,
 #registro h2 {
-  color: var(--textPurple);
+  color: var(--textWhite);
   font-size: 2rem;
   font-weight: 800;
   border-bottom: 2px solid var(--decorationPurple);
@@ -265,7 +264,7 @@ main {
 /* CONTACTO */
 #contacto {
   margin-top: 80px;
-  padding: 80px 0;
+  padding: 80px 40px;
   width: 1200px;
   background: linear-gradient(
     90deg,
@@ -276,57 +275,66 @@ main {
   border-radius: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.contacto__container {
-  padding: 0 40px;
-  width: 1200px;
-  display: flex;
-  align-items: center;
   justify-content: space-evenly;
   gap: 30px;
 }
 
-.contacto__container h2 {
+#contacto h2 {
   width: 30%;
   color: var(--textWhite);
   font-size: 1.5rem;
   border-bottom: 2px solid var(--decorationRed);
 }
 
-.contacto__container form {
+#contacto form {
   background: rgba(255, 255, 255, 0.082);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   border-radius: 20px;
   width: 400px;
   padding: 60px 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 150px 150px;
+  justify-content: space-between;
   gap: 10px;
+  z-index: 1;
 }
 
-.contacto__container label {
+#contacto form :nth-child(5) {
+  grid-column: 1 / span 2;
+}
+
+.campo,
+.campo-login,
+.campo-signup {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label,
+.campo-login label,
+.campo-signup label {
   color: var(--textGray);
   font-weight: 500;
 }
 
-.contacto__container input {
+.campo input,
+.campo-signup input {
   height: 30px;
   border-radius: 10px;
 }
 
-.contacto__container .submit {
+.submit {
   margin-top: 20px;
   background: var(--decorationPurple);
   box-shadow: 0px 0px 20px -3px var(--decorationPurple);
   color: var(--textWhite);
+  font-size: 14px;
+  font-weight: 400;
   border: none;
   border-radius: 10px;
-  width: 90px;
+  width: 150px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,4 +415,64 @@ footer {
 .footer__bottom a {
   color: var(--textGray);
   font-size: 14px;
+}
+
+/* /// LOGGING */
+.logging,
+.signup {
+  background: rgb(0, 0, 0);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.logging h1,
+.signup h1 {
+  color: var(--textWhite);
+  font-size: 2rem;
+  font-weight: 800;
+  border-bottom: 2px solid var(--decorationRed);
+}
+
+.logging__container,
+.signup__container {
+  width: 400px;
+  padding: 50px 30px;
+  background: var(--bgGray);
+  box-shadow: 0px 0px 32px 0 rgba(255, 255, 255, 0.185);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 15px;
+  box-shadow: 0px 0px 32px 0 rgba(255, 255, 255, 0.185);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.campo-login input {
+  height: 30px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.signup__container form {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.signup__container form :nth-child(5),
+.signup__container form :nth-child(4),
+.signup__container form :nth-child(3) {
+  grid-column: 1 / span 2;
+}
+
+.signup__container form p,
+.signup__container form a {
+  color: var(--textGray);
+  font-size: 12px;
 }

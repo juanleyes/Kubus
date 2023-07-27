@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kubus | Software Engineering</title>
+    <link rel="icon" href="./assets/img/favicon.png">
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
@@ -125,8 +126,8 @@
           nosotros.
         </p>
         <div class="registro__button">
-          <a href="#" class="button">Iniciar Sesión</a>
-          <a href="#" class="button">Regístrate</a>
+          <a href="./pages/login.html" class="button">Iniciar Sesión</a>
+          <a href="./pages/signup.html" class="button">Regístrate</a>
         </div>
         <img src="./assets/img/kubus.png" alt="kubus logo" />
       </section>
@@ -142,17 +143,28 @@
         </div>
       </section>
       <section id="contacto">
-        <div class="contacto__container">
           <h2>Contacta con nosotros y podremos ayudarte</h2>
           <form>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="apellido" required />
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" required />
-            <label for="email">Email</label>
-            <input type="email" name="email" />
-            <label for="numero">Teléfono</label>
-            <input type="tel" name="numero" required />
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input type="text" name="apellido" required />
+            </div>
+            <div class="campo">
+              <label for="apellido">Apellido</label>
+              <input type="text" name="apellido" required />
+            </div>
+            <div class="campo">
+              <label for="email">Email</label>
+              <input type="email" name="email" required/>
+            </div>
+            <div class="campo">
+              <label for="numero">Teléfono</label>
+              <input type="tel" name="numero" required />
+            </div>
+            <div class="campo">
+              <label for="info">Cuentanos un poco sobre tu proyecto</label>
+              <input type="textarea"/>
+            </div>
             <input type="submit" value="Enviar" class="submit" />
           </form>
         </div>
@@ -178,12 +190,12 @@
           <h3>
             Registrate para recibir noticias, invitaciones y más beneficios.
           </h3>
-          <a href="#" class="button">Regístrate</a>
+          <a href="./pages/signup.html" class="button">Regístrate</a>
         </div>
       </div>
       <div class="footer__bottom">
         <h3>Todos los derechos resevados 2023</h3>
-        <a href="#">Política de privacidad</a>
+        <a href="#">Políticas de privacidad</a>
         <a href="#">Términos de servicio</a>
       </div>
     </footer>
