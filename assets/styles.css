@@ -17,7 +17,6 @@
   text-decoration: none;
   list-style: none;
   font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
   /* border: 1px solid red; */
 }
 
@@ -31,6 +30,7 @@ header {
   justify-content: space-around;
   position: fixed;
   box-shadow: 0px 2px 15px 0px var(--decorationRed);
+  z-index: 1;
 }
 
 /* NAVBAR */
@@ -357,6 +357,7 @@ footer {
 }
 
 .footer__top {
+  padding: 0 20px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -396,7 +397,7 @@ footer {
 
 .suscribe h3 {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .footer__bottom {
@@ -418,7 +419,7 @@ footer {
   font-size: 14px;
 }
 
-/* /// LOGGING */
+/* /// LOGGING - SIGNUP ///*/
 .logging,
 .signup {
   background: rgb(0, 0, 0);
