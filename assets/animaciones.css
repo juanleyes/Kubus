@@ -27,16 +27,18 @@ html {
 }
 
 .servicios__card,
-.button {
+.about-us__card,
+.submit {
   transition: 0.3s ease-out;
 }
 
 .servicios__card:hover,
-.button:hover {
+.about-us__card:hover,
+.submit:hover {
   transform: scale(1.07);
 }
 
-/* ANIMACIÓN LOGIN Y SIGNUP */
+/* ANIMACIÓN EN LOGIN Y SIGNUP */
 @keyframes size {
   to {
     transform: scale(1.1);
@@ -45,5 +47,5 @@ html {
 
 .signup h1,
 .logging h1 {
-  animation: size 1s ease-out forwards;
+  animation: size 0.4s linear forwards;
 }
