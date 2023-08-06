@@ -79,7 +79,7 @@ main {
 /* HERO */
 #hero {
   margin-top: 75px;
-  padding: 80px 0;
+  padding: 80px 30px;
   max-width: 1200px;
   display: flex;
   align-items: center;
@@ -115,14 +115,15 @@ main {
 }
 
 .hero__img {
+  width: 50%;
   border-radius: 20px;
   box-shadow: 0px 0px 55px -3px var(--decorationPurple);
 }
 
 /* ABOUT-US */
 #about-us {
-  padding: 80px 0;
-  width: 1200px;
+  padding: 80px 30px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,7 +138,6 @@ main {
   font-size: 2rem;
   font-weight: 800;
   border-bottom: 2px solid var(--decorationPurple);
-  align-self: flex-start;
 }
 
 .about-us__card__container {
@@ -176,8 +176,8 @@ main {
 
 /* SERVICIOS */
 #servicios {
-  padding: 80px 0;
-  width: 1200px;
+  padding: 80px 30px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,7 +216,7 @@ main {
 /* REGISTRO */
 #registro {
   padding: 80px 0;
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -255,7 +255,7 @@ main {
 
 .socios__info {
   padding: 30px 0;
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -278,14 +278,14 @@ main {
 #contacto {
   margin-top: 80px;
   padding: 80px 40px;
-  width: 1200px;
+  /* width: 1200px; */
+  width: 100%;
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 1) 0%,
     rgba(57, 16, 69, 1) 50%,
     rgba(0, 0, 0, 1) 100%
   );
-  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -310,7 +310,6 @@ main {
   grid-template-columns: 150px 150px;
   justify-content: space-between;
   gap: 10px;
-  z-index: 1;
 }
 
 #contacto form :nth-child(5) {
@@ -392,6 +391,7 @@ footer {
 .social__links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .social__links a {
@@ -410,6 +410,7 @@ footer {
 .suscribe h3 {
   font-size: 16px;
   font-weight: 400;
+  text-align: center;
 }
 
 .footer__bottom {
