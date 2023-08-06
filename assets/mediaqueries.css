@@ -5,11 +5,11 @@
 
   .nav__list {
     background: rgb(0, 0, 0);
-    width: 70%;
+    width: 90%;
     position: absolute;
     top: 75px;
-    right: 15%;
-    left: 15%;
+    right: 5%;
+    left: 5%;
     flex-direction: column;
     display: none;
     border: 2px solid var(--decorationRed);
@@ -31,7 +31,7 @@
   }
 
   .hero__info {
-    width: 80%;
+    width: 90%;
     align-items: center;
     justify-content: center;
   }
@@ -63,6 +63,10 @@
   #registro p {
     width: 50%;
     text-align: center;
+  }
+
+  .footer__logo {
+    width: 25%;
   }
 }
 
