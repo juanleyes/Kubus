@@ -41,6 +41,10 @@
     text-align: center;
   }
 
+  .hero__info h1 {
+    font-size: 30px;
+  }
+
   #about-us h2,
   #servicios h2,
   #registro h2 {
