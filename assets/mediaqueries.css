@@ -58,7 +58,7 @@
   }
 
   #registro p {
-    width: 50%;
+    width: 90%;
     text-align: center;
   }
 
@@ -67,17 +67,41 @@
     flex-direction: column;
   }
 
+  .footer__top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .suscribe {
+    display: none;
+  }
+
   .footer__logo {
-    width: 25%;
+    max-width: 130px;
   }
 
   .footer__bottom {
     flex-direction: column;
-    /* align-items: flex-start; */
+    gap: 10px;
   }
 }
 
 @media (max-width: 576px) {
+  header {
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .hero__info {
+    width: 100%;
+  }
+
+  #about-us h2,
+  #servicios h2,
+  #registro h2 {
+    text-align: center;
+  }
+
   #contacto {
     flex-direction: column;
   }
@@ -91,12 +115,8 @@
     gap: 5px;
   }
 
-  .suscribe {
-    display: none;
-  }
-
-  .footer__top {
-    flex-direction: column;
+  .footer__bottom h3 {
+    text-align: center;
   }
 
   /* /// LOGGING - SINGUP /// */
@@ -104,4 +124,7 @@
   .signup__container {
     width: 350px;
   }
+}
+
+@media (max-width: 320px) {
 }
