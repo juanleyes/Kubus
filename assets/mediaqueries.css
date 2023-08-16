@@ -126,5 +126,23 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
+  .hero__info h1,
+  .hero__info p {
+    width: 100%;
+  }
+
+  #about-us h2,
+  #servicios h2,
+  #registro h2 {
+    font-size: 1.5rem;
+  }
+
+  #registro p {
+    font-size: 18px;
+  }
+
+  .social {
+    display: none;
+  }
 }

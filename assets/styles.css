@@ -292,7 +292,7 @@ main {
 }
 
 #contacto h2 {
-  width: 30%;
+  width: 40%;
   color: var(--textWhite);
   font-size: 1.5rem;
   border-bottom: 2px solid var(--decorationRed);
@@ -420,13 +420,17 @@ footer {
   gap: 20px;
 }
 
-.footer__bottom h3 {
+.footer__bottom h3,
+.footer__signup h3,
+.footer__logging h3 {
   color: var(--textGray);
   font-size: 14px;
   font-weight: 300;
 }
 
-.footer__bottom a {
+.footer__bottom a,
+.footer__signup a,
+.footer__logging a {
   color: var(--textGray);
   font-size: 14px;
 }
@@ -435,8 +439,10 @@ footer {
 .logging,
 .signup {
   background: rgb(0, 0, 0);
-  height: 100vh;
-  width: 80%;
+  height: 100%;
+  width: 90%;
+  margin-top: 85px;
+  padding-top: 75px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -451,12 +457,14 @@ footer {
   font-size: 2rem;
   font-weight: 800;
   border-bottom: 2px solid var(--decorationRed);
+  text-align: center;
 }
 
 .logging__container,
 .signup__container {
-  width: 400px;
+  max-width: 1200px;
   padding: 40px 30px;
+  margin-bottom: 90px;
   background: var(--bgGray);
   box-shadow: 0px 0px 32px 0 rgba(255, 255, 255, 0.185);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -491,4 +499,14 @@ footer {
 .signup__container form a {
   color: var(--textGray);
   font-size: 12px;
+}
+
+.footer__signup,
+.footer__logging {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
